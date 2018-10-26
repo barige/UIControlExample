@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UIControlExample</string>
+    <string name="Please_Enter_Your_Name">Enter Name</string>
+    <string name="Please_Enter_Number">Enter Number</string>
+    <string name="Please_Enter_Mailid">Enter Mail id</string>
+    <string-array name="spinner_data">
+        <item> Work</item>
+        <item> Home</item>
+        <item> Fax</item>
+        <item> Others</item>
+    </string-array>
+</resources>

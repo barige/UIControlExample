@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Contact "
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_contact_name"
+        android:hint="@string/Please_Enter_Your_Name"
+        android:textStyle="bold"
+        android:inputType="textCapWords"/>
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/id_contact_number"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/Please_Enter_Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/id_spinner"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_data"></Spinner>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_mail"
+        android:textStyle="bold"
+        android:hint="@string/Please_Enter_Mailid"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_save_contact"
+        android:hint="Save Contact"
+        android:textColor="#ed0a0a"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>
